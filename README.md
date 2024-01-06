@@ -1,1 +1,1 @@
-# redis-essential
+# Redis essential training

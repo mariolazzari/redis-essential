@@ -1,0 +1,17 @@
+set name Mario
+set city_country "Coccaglio, Italy"
+
+get name
+
+set "my first name" Mario
+get "my first name"
+
+set counter 0
+incr counter
+decr counter
+
+incrby counter 5
+decrby counter 5
+
+set mykey "my long string"
+strlen mykey
