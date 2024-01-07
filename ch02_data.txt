@@ -1,1 +1,13 @@
-hashmap
+hset loggedUser:123  name "Mario Lazzari" url "https://mariolazzari.it" role dev admin true
+
+hget loggedUser:123 name
+
+hmget loggedUser:123 name url
+
+hset cart:123 prod:1:name "Oranges" prod:1:price "1.99" prod:1:amount "1" prod:2:name "Apples" prod:2:price "2.99" prod:2:amount "2" 
+
+hincrby cart:123 prod:1:amout 3
+
+hgetall cart:123
+
+hlen cart:123
