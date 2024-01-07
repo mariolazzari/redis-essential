@@ -1,0 +1,29 @@
+lpush mylist "first element" "second element" "final element"
+
+lpop mylist
+
+lpop mylist 3
+
+rpush thequeue "Mariarosa Sbardellati" "Mario Lazzari" "Maria Filippini"
+rpush thequeue "Mario Rossi"
+rpush thequeue "Marta Verdi"
+
+lpop theqeue
+
+lrange 0 -1
+
+linsert thequeue after "Mario Lazzari" "Roberto Lazzari"
+
+lrange thequeue 0 0
+
+llen thequeue
+
+lrange thequeue 0 5
+lrange thequeue -1 -1
+
+sadd theset "Mariarosa Sbardellati" "Mario Lazzari" "Maria Filippini"
+sadd theset "Mario Rossi"
+
+smembers theset
+
+srem thequeue "Mario Lazzari"

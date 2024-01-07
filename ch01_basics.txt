@@ -15,3 +15,7 @@ decrby counter 5
 
 set mykey "my long string"
 strlen mykey
+
+append mykey " is longer now"
+
+getrange mykey 3 6
