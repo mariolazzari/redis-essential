@@ -1,0 +1,14 @@
+subscribe notifications
+
+publish notifications "This is my first message to notifications"
+
+xadd myevents * user "mario" event_type "left-click" coord_x 32 coord_y 32
+xadd myevents * user "mario" event_type "right-click" coord_x 32 coord_y 32
+xadd myevents * user "mario" event_type "scroll"
+
+xrange myevents - +
+
+xrevrange myevents + - count 1
+
+xread block 0 streams myevents $
+xadd myevents * user "Mario Lazzari" event_type "scroll"

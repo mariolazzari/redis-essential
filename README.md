@@ -9,3 +9,11 @@
 ### List
 
 ### Set
+
+### Sorted set
+
+## Publush / Subscribe
+
+### Streams
+
+## Key store notifications
